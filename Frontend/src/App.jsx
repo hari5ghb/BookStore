@@ -5,13 +5,17 @@ import Courses from "./courses/Courses";
 import Signup from "./components/Signup";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
+import Contact from "./components/Contact"
+import About from "./components/About"
+
+
 
 function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
   return (
     <>
-      <div className="dark:bg-slate-900 dark:text-white">
+      <div className="bg-slate-100 dark:text-black">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
@@ -19,6 +23,8 @@ function App() {
             element={authUser ? <Courses /> : <Navigate to="/signup" />}
           />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
         </Routes>
         <Toaster />
       </div>

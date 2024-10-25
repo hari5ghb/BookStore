@@ -14,6 +14,7 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    purchased:[],
 });
 const User = mongoose.model("User", userSchema);
 export default User;

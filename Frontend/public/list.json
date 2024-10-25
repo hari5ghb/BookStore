@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "name": "Story Book",
+        "description": "It's a storybook filled with classic tales.",
+        "price": 0,
+        "category": "Free",
+        "image": "./story.jpg"   
+    },
+    {
+        "id": 2,
+        "name": "Horror Chronicles",
+        "description": "A collection of terrifying horror stories.",
+        "price": "170",
+        "category": "horror",
+        "image": "./horror.jpeg"    },
+    {
+        "id": 3,
+        "name": "Fantasy Adventures",
+        "description": "Enter a world of magic and mystery.",
+        "price": 0,
+        "category": "Free",
+        "image": "./fantasy.jpeg"    },
+    {
+        "id": 4,
+        "name": "Song Lyrics Collection",
+        "description": "A compilation of popular song lyrics.",
+        "price": "200",
+        "category": "song",
+        "image": "songlyric.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Children's Tales",
+        "description": "Bedtime stories for children.",
+        "price": 0,
+        "category": "Free",
+        "image": "./tale.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Mystery Case Files",
+        "description": "Solve thrilling mysteries in this book.",
+        "price": 0,
+        "category": "Free",
+        "image": "mystery.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Songwriter's Notebook",
+        "description": "A collection of unpublished song drafts.",
+        "price": "100",
+        "category": "song",
+        "image": "song.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Haunted Tales",
+        "description": "Ghost stories that will keep you up at night.",
+        "price": "150",
+        "category": "horror",
+        "image": "./haunted.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Nature Poetry",
+        "description": "A serene collection of poems inspired by nature.",
+        "price": 0,
+        "category": "Free",
+        "image": "./nature.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "I Too Had a Love Story",
+        "description": "A heartfelt tale of love, dreams, and the challenges that come with them. This story captures the essence of romantic relationships and the journey of self-discovery.",
+        "price": 0,
+        "category": "Free",
+        "image": "./itoo.jpeg"
+   }
+      
+]

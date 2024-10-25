@@ -7,13 +7,14 @@ import Slider from "react-slick";
 import axios from "axios";
 
 import Cards from "./Cards";
+
 function Freebook() {
   const [book, setBook] = useState([]);
+
   useEffect(() => {
     const getBook = async () => {
       try {
         const res = await axios.get("http://localhost:4001/book");
-
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
         setBook(data);
@@ -58,19 +59,22 @@ function Freebook() {
       },
     ],
   };
+
   return (
     <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div>
-          <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-6 my-12">
+        <div className="text-center md:text-left mb-8">
+          <h1 className="font-semibold text-2xl md:text-3xl pb-4">
+            Free Offered Courses
+          </h1>
+          <p className="text-gray-600 leading-relaxed md:w-3/4 mx-auto md:mx-0">
+            Explore our free selection of courses. Whether you're looking to
+            learn a new skill, explore a hobby, or dive into a completely new
+            field, we offer something for everyone. Start learning today!
           </p>
         </div>
 
-        <div>
+        <div className="mt-8">
           <Slider {...settings}>
             {book.map((item) => (
               <Cards item={item} key={item.id} />
@@ -81,4 +85,5 @@ function Freebook() {
     </>
   );
 }
+
 export default Freebook;
